@@ -12,8 +12,8 @@ class rymSpider(Spider):
 	urls = []
 
 	def start_requests(self):
-		pagecounter = range(1,38)
-		url_pattern = "https://rateyourmusic.com/release/album/the-beatles/with-the-beatles-2/reviews/{page}"
+		pagecounter = range(1,40)
+		url_pattern = "https://rateyourmusic.com/release/album/the-beatles/a-hard-days-night-84/reviews/{page}"
 
 		for page in pagecounter:
 			self.urls.append(url_pattern.format(page=page))
